@@ -1,0 +1,148 @@
+// Homepage Styles
+
+header#home {
+  background: #780030 url('/assets/bkgd-header.png') center center no-repeat;
+  background-size: cover;
+  font-size: 28px;
+  #logo {
+    img {
+      max-width: 165px;
+    }
+  }
+  h1 {
+    font-size: 7vw;
+    color: white;
+    line-height: 7vw;
+    margin-bottom: 25px;
+    span {
+      position: relative;
+      color: #ffffff;
+      img {
+        position: absolute;
+        bottom: 45%;
+        left: 70%;
+        height: 50%;
+      }
+    }
+  }
+  #phone {
+    position: relative;
+    img {
+      max-width: 85%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0 0 0 10%;
+    }
+  }
+}
+
+@media only screen and (max-width: #{$xs-max}) {
+  header#home {
+    h1 {
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: -15px;
+      font-size: 80px;
+      line-height: 70px;
+
+    }
+    #phone {
+      position: relative;
+      img {
+        max-width: 90%;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 25px -150px;
+      }
+    }
+  }
+  #home-download {
+    padding-top: 110px;
+  }
+}
+
+#home-download {
+  background: #ffffff;
+  text-align: center;
+  table {
+    width: 100%;
+  }
+  img {
+    max-height: 60px;
+  }
+}
+
+@media only screen and (min-width: #{$sm-start}) {
+  #home-download {
+    text-align: left;
+    img {
+      max-height: 5vw;
+    }
+  }
+}
+
+@media only screen and (min-width: #{$md-start}) {
+  #home-download {
+    table {
+      max-width: 400px;
+    }
+    img {
+      max-height: 50px;
+    }
+  }
+}
+
+#home-features {
+  background: #ffffff;
+  text-align: center;
+  padding: 10% 0 50px;
+  .icon-section {
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .icon-wrap {
+      height: 60px;
+      display: flex;
+      justify-content: center; /* align horizontal */
+      align-items: center; /* align vertical */
+    }
+    &:first-child {
+      .icon-wrap {
+        img {
+          height: 100%;
+        }
+      }
+    }
+    .icon-wrap {
+      img {
+        height: 45px;
+      }
+    }
+  }
+}
+
+.container {
+  @include row();
+  .box {
+    @include col(12);
+    @include col(sm, 6);
+    @include col(md, 3);
+  }
+}
+
+@media only screen and (min-width: #{$lg-start}) {
+  header#home {
+    h1 {
+      font-size: 100px;
+      line-height: 100px;
+    }
+  }
+  #home-features {
+    padding: 150px 0 50px;
+  }
+}
