@@ -1,0 +1,43 @@
+#tos, #privacy, #faq {
+  padding-top: 135px;
+  header {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FAFAFA;
+    padding-bottom: 25px;
+    img {
+      max-width: 225px;
+      margin: 25px 0 10px 0;
+    }
+    p {
+      border-top: 2px solid gray;
+      border-bottom: 2px solid gray;
+      display: table;
+      margin: 0 auto;
+      font-size: 21px;
+      text-transform: uppercase;
+      padding: 5px 0px;
+    }
+  }
+  h2 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  ul {
+    li {
+      font-size: 14px;
+    }
+  }
+}
+
+#faq {
+  h2 {
+    padding: 15px 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 0;
+  }
+}
